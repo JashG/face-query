@@ -7,10 +7,13 @@ that they appear in, as well as an estimate of where in the video they appear.
 ## How does it work?
 
 The project is composed of three key pieces:
-    1. A Python script to fetch videos from different sources (such as YouTube)
-    2. An automated video analysis system to determine which celebrities are in the video, leveraging an AWS Lambda function
-    3. A way to retrieve the results (Python API) and a web interface to allow users to search for celebrities (ReactJS)
+
+1. **Building the video library**: Python script that fetches videos from different sources (such as YouTube) and uploads videos to an AWS S3 bucket, which triggers the video analysis.
+    
+2. **Automated video analysis**: AWS Lambda function scans our S3 bucket for the new video and determines which celebrities are in the video, leveraging the AWS Rekognition Machine Learning API. The results of the analysis are stored in another S3 bucket.
+    
+3. **Displaying the results**: Custom Python API that queries our results bucket, and web app built with React that allows the user to search for a celebrity.
 
 ## System Architecture
 
-[](program_architecture.png)
+![ok](program_architecture.png)
