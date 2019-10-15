@@ -1,0 +1,6 @@
+wIn your HOME Directory on your laptop, create a directory called ".aws"
+Create a file called "config" (no extension)
+Paste the following content:
+
+[default]
+region = us-east-1

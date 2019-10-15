@@ -1,0 +1,20 @@
+.header-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: #b83839;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-brand {
+    align-self: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+}

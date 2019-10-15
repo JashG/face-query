@@ -1,0 +1,8 @@
+.video-container {
+  display: flex;
+  justify-content: center;
+  width: 560px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+  font-size: 16px;
+}
